@@ -1,10 +1,22 @@
 package lesson_6;
 
 public class Cat extends Animals {
-    public Cat(String name, int maxRun, int maxSwim) {
-        super(name, maxRun, maxSwim);
+    public Cat(String name, int maxRun, int maxSwim, int sprint) {
+        super(name, maxRun, maxSwim, sprint);
     }
-    public static void main(String[] args) {
-        Cat cat1 = new Cat("Onyx", 200, 0);
+    public void run() {
+        if(getMaxRun() > getSprint()) {
+            System.out.println(getName() + " true");
+        } else {
+            System.out.println(getName() + " false");
+        }
+    }
+    public void swim() {
+        if(getMaxSwim() > getSprint()) {
+            System.out.println(getName() + " true");
+        } else {
+            System.out.println(getName() + " false");
+        }
     }
 }
+
