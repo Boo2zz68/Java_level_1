@@ -29,6 +29,6 @@ public class Team {
         this.maxDistance = maxDistance;
     }
     public void printTeam() {
-        System.out.println("Спортсмен " + name + " преодолел забег!!!");
+        System.out.println("Спортсмен " + name + " успешно преодолел забег!!!");
     }
 }
